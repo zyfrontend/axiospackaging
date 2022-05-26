@@ -1,0 +1,22 @@
+{
+  "name": "testaxios",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vueuse/core": "^8.5.0",
+    "axios": "^0.27.2",
+    "element-plus": "^2.2.0",
+    "qs": "^6.10.3",
+    "vant": "^3.4.9",
+    "vue": "^3.2.25"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.3.3",
+    "vite": "^2.9.9"
+  }
+}

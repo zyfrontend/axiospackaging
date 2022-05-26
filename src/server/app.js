@@ -1,0 +1,37 @@
+const http = require('http');
+const host = 'localhost';
+const port = '8888';
+const app = require('./router'); // 引入router.js文件
+
+const server = http.createServer(app);
+
+app.post('/api/register', (req, res) => {
+    res.write(`<head><meta charset="utf-8"/></head>`);
+    res.end('注册接口响应')
+});
+
+app.post('/api/login', (req, res) => {
+    res.write(`<head><meta charset="utf-8"/></head>`);
+    res.end('登录接口响应')
+});
+
+app.get('/api/list', (req, res) => {
+    res.write(`<head><meta charset="utf-8"/></head>`);
+    res.end('查询列表接口响应')
+});
+
+
+
+// app.get('/api/list', (req, res) => {
+//     throw new Error('错误啦！！！');
+// });
+
+// app.get('/api/list', (req, res) => {
+//     setTimeout(() => {
+//         res.end();
+//     },  150000)
+// });
+
+server.listen(port, host, () => {
+    console.log(`Server running at http://${host}:${port}`);
+});
